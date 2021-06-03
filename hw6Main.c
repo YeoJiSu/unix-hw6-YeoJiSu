@@ -4,22 +4,14 @@
 
 void registerPhoneData();
 void print();
-void printArray(void *arr, int size);
 void searchByName();
 void deleteByName();
 void sort();
 
 void (* pFuncs[5])()={registerPhoneData, print, searchByName, deleteByName,sort};
 
-typedef int (*cmp)(const void*, int, int);
-typedef int (*swap)(void*, int, int);
-
-void sortPhoneBook(void *A, int size, cmp cfn, swap sfn);
-
-int contactCmpr(const void*, int, int);
-int contactSwap(void*, int, int);
-
-static int count_service = 0;	
+static int count_service = 0;
+int size=0;
 
 int main()
 {
