@@ -19,7 +19,8 @@ void sortPhoneBook(void *A, int size, cmp cfn, swap sfn);
 int contactCmpr(const void*, int, int);
 int contactSwap(void*, int, int);
 
-static int count_service = 0;	
+static int count_service = 0;
+int size=0;
 
 int main()
 {
